@@ -1,25 +1,8 @@
 import React from "react";
+import "./word.css";
 
 type Props = {
   word: string;
-};
-
-const styles: Record<string, React.CSSProperties> = {
-  wordBox: {
-    backgroundColor: "#6AA964",
-    width: "48px",
-    height: "48px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    margin: "0 4px",
-    flexDirection: "row",
-  },
-  char: {
-    color: "white",
-    fontWeight: "bold",
-    fontSize: "42px",
-  },
 };
 
 export const Word: React.FC<Props> = ({ word }) => {
@@ -27,8 +10,8 @@ export const Word: React.FC<Props> = ({ word }) => {
     <div style={{ display: "flex" }}>
       {word.split("").map((char, i) => {
         return (
-          <div style={styles.wordBox} key={i}>
-            <span style={styles.char}>{char.toUpperCase()}</span>
+          <div className="wordbox" key={i}>
+            <span className="char">{char.toUpperCase()}</span>
           </div>
         );
       })}

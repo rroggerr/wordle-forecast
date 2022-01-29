@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wordle-forecast/static/css/main.e6c13ad2.css",
-    "main.js": "/wordle-forecast/static/js/main.16844cbe.js",
+    "main.css": "/wordle-forecast/static/css/main.a0a553de.css",
+    "main.js": "/wordle-forecast/static/js/main.31f4649f.js",
     "index.html": "/wordle-forecast/index.html",
-    "main.e6c13ad2.css.map": "/wordle-forecast/static/css/main.e6c13ad2.css.map",
-    "main.16844cbe.js.map": "/wordle-forecast/static/js/main.16844cbe.js.map"
+    "main.a0a553de.css.map": "/wordle-forecast/static/css/main.a0a553de.css.map",
+    "main.31f4649f.js.map": "/wordle-forecast/static/js/main.31f4649f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.16844cbe.js"
+    "static/css/main.a0a553de.css",
+    "static/js/main.31f4649f.js"
   ]
 }
