@@ -1,5 +1,4 @@
 import React from "react";
-import { words } from "./words";
 import { Word } from "./Word";
 import { getWord } from "./getWord";
 
