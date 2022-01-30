@@ -8,7 +8,7 @@
   }
 
   .tile[data-reveal='true'] {
-    transition: ease-in-out 200ms opacity 250ms;
+    transition: ease-in-out 200ms opacity 200ms;
     opacity: 1;
   }
 

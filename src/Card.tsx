@@ -16,7 +16,15 @@ export const Card: React.FC<Props> = ({ i, today }) => {
     Number(date) + 23 * 60 * 60 * 1000 < Number(new Date())
   );
   return (
-    <div key={i} className="card">
+    <div
+      key={i}
+      className="card"
+      tabIndex={i + 1}
+      onClick={() => setShow(true)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter") setShow(true);
+      }}
+    >
       <div className="dateBox">
         <span className="dateText">{`${
           date.getMonth() + 1
@@ -26,9 +34,7 @@ export const Card: React.FC<Props> = ({ i, today }) => {
       {show ? (
         <Word word={getWord(date)} hasAnimation />
       ) : (
-        <div className="reveal" role="button" onClick={() => setShow(true)}>
-          Click to reveal
-        </div>
+        <div className="reveal">Click to reveal</div>
       )}
     </div>
   );

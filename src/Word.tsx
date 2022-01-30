@@ -9,7 +9,7 @@ type Props = {
 
 export const Word: React.FC<Props> = ({ word, ...props }) => {
   return (
-    <div style={{ display: "flex" }}>
+    <div style={{ display: "flex" }} aria-label={word}>
       {word.split("").map((char, i) => (
         <CharBox key={i} offset={i} char={char} {...props} />
       ))}

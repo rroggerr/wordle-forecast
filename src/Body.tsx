@@ -1,17 +1,19 @@
 import React from "react";
 import { Card } from "./Card";
-const NUM_CARDS = 8;
+
+const NUM_CARDS = 10;
+const TOP_GAP = '16px'
 
 const styles: Record<string, React.CSSProperties> = {
   body: {
     backgroundColor: "#282936",
-    height: "calc(100% - 120px)",
+    height: "calc(100% - 120px - 50px)",
     overflowY: "hidden",
   },
   scrollWrapper: {
-    height: "calc(100% - 32px)",
+    height: `calc(100% - ${TOP_GAP})`,
     overflowY: "auto",
-    margin: "16px auto",
+    margin: `${TOP_GAP} 0 0 0`,
   },
 };
 
