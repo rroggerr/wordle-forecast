@@ -16,11 +16,12 @@ const styles: Record<string, React.CSSProperties> = {
 };
 
 export const Body: React.FC = () => {
+  const today = new Date();
   return (
     <div style={styles.body}>
       <div style={styles.scrollWrapper}>
         {Array.from(Array(NUM_CARDS).keys()).map((i) => (
-          <Card key={i} i={i} />
+          <Card key={i} i={i} today={today} />
         ))}
       </div>
     </div>

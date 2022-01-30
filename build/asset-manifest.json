@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wordle-forecast/static/css/main.ea232c8a.css",
+    "main.js": "/wordle-forecast/static/js/main.7d9a1e88.js",
+    "index.html": "/wordle-forecast/index.html",
+    "main.ea232c8a.css.map": "/wordle-forecast/static/css/main.ea232c8a.css.map",
+    "main.7d9a1e88.js.map": "/wordle-forecast/static/js/main.7d9a1e88.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea232c8a.css",
+    "static/js/main.7d9a1e88.js"
+  ]
+}

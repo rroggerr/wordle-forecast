@@ -1,0 +1,40 @@
+  .tile[data-animation='pop'] {
+    animation-name: PopIn;
+    animation-duration: 100ms;
+  }
+
+  .tile[data-reveal='false']  {
+    opacity: 0;
+  }
+
+  .tile[data-reveal='true'] {
+    transition: ease-in-out 200ms opacity 250ms;
+    opacity: 1;
+  }
+
+  .tile[data-animation='flip-in'] {
+    animation-name: FlipIn;
+    animation-duration: 250ms;
+    animation-timing-function: ease-in;
+  }
+  @keyframes FlipIn {
+    0% {
+      transform: rotateX(0);
+    }
+    100% {
+      transform: rotateX(-90deg);
+    }
+  }
+  .tile[data-animation='flip-out'] {
+    animation-name: FlipOut;
+    animation-duration: 250ms;
+    animation-timing-function: ease-in;
+  }
+  @keyframes FlipOut {
+    0% {
+      transform: rotateX(-90deg);
+    }
+    100% {
+      transform: rotateX(0);
+    }
+  }

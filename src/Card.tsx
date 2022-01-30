@@ -6,14 +6,15 @@ const WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
 type Props = {
   i: number;
+  today: Date;
 };
 
-const today = new Date();
-
-export const Card: React.FC<Props> = ({ i }) => {
-  const offset = i - 1;
+export const Card: React.FC<Props> = ({ i, today }) => {
+  const offset = i - 2;
   const date = new Date(today.getTime() + offset * 24 * 60 * 60 * 1000);
-  const [show, setShow] = React.useState(date < new Date());
+  const [show, setShow] = React.useState(
+    Number(date) + 23 * 60 * 60 * 1000 < Number(new Date())
+  );
   return (
     <div key={i} className="card">
       <div className="dateBox">
@@ -23,7 +24,7 @@ export const Card: React.FC<Props> = ({ i }) => {
         <span>{WEEK[date.getDay()]}</span>
       </div>
       {show ? (
-        <Word word={getWord(date)} />
+        <Word word={getWord(date)} hasAnimation />
       ) : (
         <div className="reveal" role="button" onClick={() => setShow(true)}>
           Click to reveal
